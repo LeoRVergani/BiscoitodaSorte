@@ -1,0 +1,53 @@
+{
+    "biscoitos": [
+    {
+        "message": "Código limpo é código feliz.",
+        "isSpecial": true,
+        "brand": "Marca A",
+        "prize": "Café grátis",
+        "id": 1
+    },
+    {
+        "message": "Debugging é como ser um detetive em um filme de mistério.",
+        "isSpecial": false,
+        "brand": "Marca B",
+        "prize": "",
+        "id": 2
+    },
+    {
+        "message": "Sempre que você acha que terminou, o bug está só começando.",
+        "isSpecial": true,
+        "brand": "Marca C",
+        "prize": "Caneca personalizada",
+        "id": 3
+    },
+    {
+        "message": "A vida é como um loop infinito, é preciso saber quando sair.",
+        "isSpecial": false,
+        "brand": "Marca D",
+        "prize": "",
+        "id": 4
+    },
+    {
+        "message": "As melhores soluções aparecem quando você menos espera.",
+        "isSpecial": true,
+        "brand": "Marca E",
+        "prize": "Curso online",
+        "id": 5
+    },
+    {
+        "message": "Refatoração: a arte de tornar o código bonito.",
+        "isSpecial": false,
+        "brand": "Marca F",
+        "prize": "",
+        "id": 6
+    },
+    {
+        "message": "Nunca subestime o poder de um café antes do código.",
+        "isSpecial": true,
+        "brand": "Marca G",
+        "prize": "Café grátis",
+        "id": 7
+    }
+    ]
+}

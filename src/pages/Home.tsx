@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Text, Alert, ScrollView } from "react-native"
+import { Text, Alert, ScrollView, FlatList, View, SafeAreaView } from "react-native"
 import axios from 'axios'
 
 // GET -> lista informacoes
@@ -7,9 +7,35 @@ import axios from 'axios'
 // DELETE -> deletar um informacao
 // PUT -> atualiza informacoes
 
-export default function Home(){
+type Biscoito = {
+    id: number
+    premio: string
+    marca: string
+    especial: boolean
+    mensagem: string
+}
 
-    const [biscoitos, setBiscoitos] = useState([])
+export default function Home(props){
+
+    const [biscoitos, setBiscoitos] = useState<Biscoito[]>([])
+
+
+
+    /*
+    async function carregarDados() {
+        try {
+            axios.get('http://192.168.100.11:3000/biscoitos')
+            setBiscoitos(response.data)
+        } catch (error) {
+            Alert.alert("Não foi possivel obter os biscoitos, comeram todos!") 
+        }
+    }
+
+    useEffect(() => {
+        carregarDados()
+    }, []) // dispara uma unica vez
+
+    */
 
     useEffect(() => {
         axios
@@ -26,10 +52,23 @@ export default function Home(){
     }, []) // dispara uma única vez
 
     return (
-        <ScrollView>
-            {biscoitos.map((biscoito) => (
-                <Text>{biscoito.message}</Text>
-            ))}
-        </ScrollView>
+        <SafeAreaView>
+            <FlatList 
+                data={biscoitos} // array que deseja renderiza
+                renderItem={({item}) => (
+                    <View style={{width: '30%', height:50}}>
+                        <Text>{item.mensagem}</Text>
+                    </View>
+                )}
+                numColumns={3}
+                ListEmptyComponent={() => (
+                    <View><Text>Sem nada aqui.</Text></View>
+                )}
+            /> 
+
+            {/* <ScrollView>{biscoitos.map((biscoito) => (<Text>{biscoito.message}</Text>))}</ScrollView> */}
+
+
+        </SafeAreaView>
     )
 }

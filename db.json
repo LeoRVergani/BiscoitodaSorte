@@ -1,53 +1,488 @@
 {
     "biscoitos": [
-    {
-        "message": "Código limpo é código feliz.",
-        "isSpecial": true,
-        "brand": "Marca A",
-        "prize": "Café grátis",
+      {
+        "marca": "Marca A",
+        "mensagem": "Código limpo é código feliz.",
+        "especial": true,
+        "premio": "Café grátis",
         "id": 1
-    },
-    {
-        "message": "Debugging é como ser um detetive em um filme de mistério.",
-        "isSpecial": false,
-        "brand": "Marca B",
-        "prize": "",
+      },
+      {
+        "marca": "Marca B",
+        "mensagem": "Debugging é como ser um detetive em um filme de mistério.",
+        "especial": false,
+        "premio": "",
         "id": 2
-    },
-    {
-        "message": "Sempre que você acha que terminou, o bug está só começando.",
-        "isSpecial": true,
-        "brand": "Marca C",
-        "prize": "Caneca personalizada",
+      },
+      {
+        "marca": "Marca C",
+        "mensagem": "Sempre que você acha que terminou, o bug está só começando.",
+        "especial": true,
+        "premio": "Caneca personalizada",
         "id": 3
-    },
-    {
-        "message": "A vida é como um loop infinito, é preciso saber quando sair.",
-        "isSpecial": false,
-        "brand": "Marca D",
-        "prize": "",
+      },
+      {
+        "marca": "Marca D",
+        "mensagem": "A vida é como um loop infinito, é preciso saber quando sair.",
+        "especial": false,
+        "premio": "",
         "id": 4
-    },
-    {
-        "message": "As melhores soluções aparecem quando você menos espera.",
-        "isSpecial": true,
-        "brand": "Marca E",
-        "prize": "Curso online",
+      },
+      {
+        "marca": "Marca E",
+        "mensagem": "As melhores soluções aparecem quando você menos espera.",
+        "especial": true,
+        "premio": "Curso online",
         "id": 5
-    },
-    {
-        "message": "Refatoração: a arte de tornar o código bonito.",
-        "isSpecial": false,
-        "brand": "Marca F",
-        "prize": "",
+      },
+      {
+        "marca": "Marca F",
+        "mensagem": "Refatoração: a arte de tornar o código bonito.",
+        "especial": false,
+        "premio": "",
         "id": 6
-    },
-    {
-        "message": "Nunca subestime o poder de um café antes do código.",
-        "isSpecial": true,
-        "brand": "Marca G",
-        "prize": "Café grátis",
+      },
+      {
+        "marca": "Marca G",
+        "mensagem": "Nunca subestime o poder de um café antes do código.",
+        "especial": true,
+        "premio": "Café grátis",
         "id": 7
-    }
+      },
+      {
+        "marca": "Marca H",
+        "mensagem": "A prática leva à perfeição.",
+        "especial": false,
+        "premio": "",
+        "id": 8
+      },
+      {
+        "marca": "Marca I",
+        "mensagem": "O código é como um poema: deve ser bonito e significativo.",
+        "especial": true,
+        "premio": "Caderno de anotações",
+        "id": 9
+      },
+      {
+        "marca": "Marca J",
+        "mensagem": "Testes são como segurança: nunca é demais.",
+        "especial": false,
+        "premio": "",
+        "id": 10
+      },
+      {
+        "marca": "Marca K",
+        "mensagem": "Um bom programador nunca para de aprender.",
+        "especial": true,
+        "premio": "Assinatura de revista",
+        "id": 11
+      },
+      {
+        "marca": "Marca L",
+        "mensagem": "O erro é o primeiro passo para o aprendizado.",
+        "especial": false,
+        "premio": "",
+        "id": 12
+      },
+      {
+        "marca": "Marca M",
+        "mensagem": "Não tenha medo de falhar, tenha medo de não tentar.",
+        "especial": true,
+        "premio": "Webinar gratuito",
+        "id": 13
+      },
+      {
+        "marca": "Marca N",
+        "mensagem": "A paciência é uma virtude, especialmente em programação.",
+        "especial": false,
+        "premio": "",
+        "id": 14
+      },
+      {
+        "marca": "Marca O",
+        "mensagem": "Um bom código é aquele que você pode entender amanhã.",
+        "especial": true,
+        "premio": "Mentoria gratuita",
+        "id": 15
+      },
+      {
+        "marca": "Marca P",
+        "mensagem": "O feedback é o café do programador.",
+        "especial": false,
+        "premio": "",
+        "id": 16
+      },
+      {
+        "marca": "Marca Q",
+        "mensagem": "As melhores ideias vêm das conversas mais simples.",
+        "especial": true,
+        "premio": "Sessão de brainstorming",
+        "id": 17
+      },
+      {
+        "marca": "Marca R",
+        "mensagem": "Nunca pare de questionar o porquê.",
+        "especial": false,
+        "premio": "",
+        "id": 18
+      },
+      {
+        "marca": "Marca S",
+        "mensagem": "Cada bug é uma oportunidade de aprender.",
+        "especial": true,
+        "premio": "T-Shirt",
+        "id": 19
+      },
+      {
+        "marca": "Marca T",
+        "mensagem": "A tecnologia é a ferramenta, o criador é você.",
+        "especial": false,
+        "premio": "",
+        "id": 20
+      },
+      {
+        "marca": "Marca U",
+        "mensagem": "Um código bem estruturado é um código que dura.",
+        "especial": true,
+        "premio": "E-book sobre programação",
+        "id": 21
+      },
+      {
+        "marca": "Marca V",
+        "mensagem": "Não há atalhos para qualquer lugar que valha a pena ir.",
+        "especial": false,
+        "premio": "",
+        "id": 22
+      },
+      {
+        "marca": "Marca W",
+        "mensagem": "O sucesso é a soma de pequenos esforços repetidos dia após dia.",
+        "especial": true,
+        "premio": "Curso de desenvolvimento pessoal",
+        "id": 23
+      },
+      {
+        "marca": "Marca X",
+        "mensagem": "A simplicidade é a sofisticação máxima.",
+        "especial": false,
+        "premio": "",
+        "id": 24
+      },
+      {
+        "marca": "Marca Y",
+        "mensagem": "Um bom design é invisível.",
+        "especial": true,
+        "premio": "Workshop de design",
+        "id": 25
+      },
+      {
+        "marca": "Marca Z",
+        "mensagem": "Inovar é sair da zona de conforto.",
+        "especial": false,
+        "premio": "",
+        "id": 26
+      },
+      {
+        "marca": "Marca AA",
+        "mensagem": "A colaboração é a chave para o sucesso.",
+        "especial": true,
+        "premio": "Acesso a grupo exclusivo",
+        "id": 27
+      },
+      {
+        "marca": "Marca AB",
+        "mensagem": "Um bom feedback é ouro.",
+        "especial": false,
+        "premio": "",
+        "id": 28
+      },
+      {
+        "marca": "Marca AC",
+        "mensagem": "A curiosidade é o motor da inovação.",
+        "especial": true,
+        "premio": "Pacote de cursos online",
+        "id": 29
+      },
+      {
+        "marca": "Marca AD",
+        "mensagem": "Menos é mais.",
+        "especial": false,
+        "premio": "",
+        "id": 30
+      },
+      {
+        "marca": "Marca AE",
+        "mensagem": "Persistência é o caminho para o sucesso.",
+        "especial": true,
+        "premio": "Consultoria gratuita",
+        "id": 31
+      },
+      {
+        "marca": "Marca AF",
+        "mensagem": "Não tenha medo de se destacar.",
+        "especial": false,
+        "premio": "",
+        "id": 32
+      },
+      {
+        "marca": "Marca AG",
+        "mensagem": "A chave para o sucesso é a comunicação.",
+        "especial": true,
+        "premio": "Livro sobre comunicação",
+        "id": 33
+      },
+      {
+        "marca": "Marca AH",
+        "mensagem": "A adversidade pode ser uma oportunidade disfarçada.",
+        "especial": false,
+        "premio": "",
+        "id": 34
+      },
+      {
+        "marca": "Marca AI",
+        "mensagem": "O conhecimento é um poder.",
+        "especial": true,
+        "premio": "Assinatura de plataforma de cursos",
+        "id": 35
+      },
+      {
+        "marca": "Marca AJ",
+        "mensagem": "A tecnologia é uma extensão da criatividade humana.",
+        "especial": false,
+        "premio": "",
+        "id": 36
+      },
+      {
+        "marca": "Marca AK",
+        "mensagem": "Um programador é um artista do código.",
+        "especial": true,
+        "premio": "Quadro para escritório",
+        "id": 37
+      },
+      {
+        "marca": "Marca AL",
+        "mensagem": "O planejamento é essencial para o sucesso.",
+        "especial": false,
+        "premio": "",
+        "id": 38
+      },
+      {
+        "marca": "Marca AM",
+        "mensagem": "O aprendizado contínuo é a chave para a evolução.",
+        "especial": true,
+        "premio": "Assinatura de podcast",
+        "id": 39
+      },
+      {
+        "marca": "Marca AN",
+        "mensagem": "A visão é o que nos guia.",
+        "especial": false,
+        "premio": "",
+        "id": 40
+      },
+      {
+        "marca": "Marca AO",
+        "mensagem": "Um código bem escrito fala por si só.",
+        "especial": true,
+        "premio": "Bolsa de estudos",
+        "id": 41
+      },
+      {
+        "marca": "Marca AP",
+        "mensagem": "O erro é parte do processo.",
+        "especial": false,
+        "premio": "",
+        "id": 42
+      },
+      {
+        "marca": "Marca AQ",
+        "mensagem": "A criatividade não tem limites.",
+        "especial": true,
+        "premio": "Acesso a eventos",
+        "id": 43
+      },
+      {
+        "marca": "Marca AR",
+        "mensagem": "O que importa é o impacto que você causa.",
+        "especial": false,
+        "premio": "",
+        "id": 44
+      },
+      {
+        "marca": "Marca AS",
+        "mensagem": "A tecnologia muda, mas o aprendizado é eterno.",
+        "especial": true,
+        "premio": "Inscrição em conferência",
+        "id": 45
+      },
+      {
+        "marca": "Marca AT",
+        "mensagem": "Nunca é tarde para começar.",
+        "especial": false,
+        "premio": "",
+        "id": 46
+      },
+      {
+        "marca": "Marca AU",
+        "mensagem": "A flexibilidade é fundamental.",
+        "especial": true,
+        "premio": "Mentoria em grupo",
+        "id": 47
+      },
+      {
+        "marca": "Marca AV",
+        "mensagem": "Os desafios nos tornam mais fortes.",
+        "especial": false,
+        "premio": "",
+        "id": 48
+      },
+      {
+        "marca": "Marca AW",
+        "mensagem": "A confiança é a base da liderança.",
+        "especial": true,
+        "premio": "Curso de liderança",
+        "id": 49
+      },
+      {
+        "marca": "Marca AX",
+        "mensagem": "Cada dia é uma nova oportunidade.",
+        "especial": false,
+        "premio": "",
+        "id": 50
+      },
+      {
+        "marca": "Marca AY",
+        "mensagem": "O trabalho em equipe gera resultados incríveis.",
+        "especial": true,
+        "premio": "Dinâmica em grupo",
+        "id": 51
+      },
+      {
+        "marca": "Marca AZ",
+        "mensagem": "A mudança é o único constante.",
+        "especial": false,
+        "premio": "",
+        "id": 52
+      },
+      {
+        "marca": "Marca BA",
+        "mensagem": "Um bom planejamento evita problemas futuros.",
+        "especial": true,
+        "premio": "Consultoria em planejamento",
+        "id": 53
+      },
+      {
+        "marca": "Marca BB",
+        "mensagem": "A paciência é a chave para a realização.",
+        "especial": false,
+        "premio": "",
+        "id": 54
+      },
+      {
+        "marca": "Marca BC",
+        "mensagem": "Os erros são lições disfarçadas.",
+        "especial": true,
+        "premio": "Curso sobre resolução de problemas",
+        "id": 55
+      },
+      {
+        "marca": "Marca BD",
+        "mensagem": "O sucesso não é um acidente.",
+        "especial": false,
+        "premio": "",
+        "id": 56
+      },
+      {
+        "marca": "Marca BE",
+        "mensagem": "A inovação é a chave para o futuro.",
+        "especial": true,
+        "premio": "Acesso a materiais exclusivos",
+        "id": 57
+      },
+      {
+        "marca": "Marca BF",
+        "mensagem": "O aprendizado é uma jornada, não um destino.",
+        "especial": false,
+        "premio": "",
+        "id": 58
+      },
+      {
+        "marca": "Marca BG",
+        "mensagem": "A autoconfiança é o primeiro passo para o sucesso.",
+        "especial": true,
+        "premio": "Workshop de autoconfiança",
+        "id": 59
+      },
+      {
+        "marca": "Marca BH",
+        "mensagem": "O sucesso é uma combinação de preparação e oportunidade.",
+        "especial": false,
+        "premio": "",
+        "id": 60
+      },
+      {
+        "marca": "Marca BI",
+        "mensagem": "Cada falha é uma chance de recomeçar com mais experiência.",
+        "especial": true,
+        "premio": "Acesso a palestras",
+        "id": 61
+      },
+      {
+        "marca": "Marca BJ",
+        "mensagem": "A motivação é o que te faz começar; o hábito é o que te faz continuar.",
+        "especial": false,
+        "premio": "",
+        "id": 62
+      },
+      {
+        "marca": "Marca BK",
+        "mensagem": "A persistência é o caminho do êxito.",
+        "especial": true,
+        "premio": "Certificado de conclusão",
+        "id": 63
+      },
+      {
+        "marca": "Marca BL",
+        "mensagem": "Aprender é uma habilidade que nunca é demais.",
+        "especial": false,
+        "premio": "",
+        "id": 64
+      },
+      {
+        "marca": "Marca BM",
+        "mensagem": "A criatividade é a chave para a inovação.",
+        "especial": true,
+        "premio": "Desafio de inovação",
+        "id": 65
+      },
+      {
+        "marca": "Marca BN",
+        "mensagem": "As melhores ideias vêm da colaboração.",
+        "especial": false,
+        "premio": "",
+        "id": 66
+      },
+      {
+        "marca": "Marca BO",
+        "mensagem": "Um bom programador é um eterno aprendiz.",
+        "especial": true,
+        "premio": "Bolsas de estudo",
+        "id": 67
+      },
+      {
+        "marca": "Marca BP",
+        "mensagem": "Aprender com os erros é o caminho para a excelência.",
+        "especial": false,
+        "premio": "",
+        "id": 68
+      },
+      {
+        "marca": "Marca BQ",
+        "mensagem": "A disciplina é a ponte entre metas e realizações.",
+        "especial": true,
+        "premio": "Mentoria sobre produtividade",
+        "id": 69
+      }
     ]
-}
+  }
+  

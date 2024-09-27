@@ -64,6 +64,13 @@ export default function Home(props){
                 ListEmptyComponent={() => (
                     <View><Text>Sem nada aqui.</Text></View>
                 )}
+                contentContainerStyle={{
+                    padding: 10,
+                    gap: 20
+                }}
+                columnWrapperStyle={{
+                    gap: 20
+                }}
             /> 
 
             {/* <ScrollView>{biscoitos.map((biscoito) => (<Text>{biscoito.message}</Text>))}</ScrollView> */}
@@ -72,3 +79,10 @@ export default function Home(props){
         </SafeAreaView>
     )
 }
+
+const styles = StyleSheet.create({
+    item:{
+        width: '30%',
+
+    }
+})

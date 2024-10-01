@@ -1,4 +1,4 @@
-import { StatusBar, StyleSheet, Text, View, SafeAreaView, Button, Alert } from 'react-native';
+import { StatusBar, StyleSheet, Text, SafeAreaView, Button, Alert } from 'react-native';
 import LottieView  from 'lottie-react-native'
 import { useEffect, useState } from 'react';
 

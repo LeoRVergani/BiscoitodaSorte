@@ -1,11 +1,15 @@
-import {SafeAreaView, Text, TextInput, StyleSheet, Switch, View} from 'react-native'
+import {SafeAreaView, Text, TextInput, StyleSheet, Switch, View, Button} from 'react-native'
 import { globalStyles } from '../global/styles'
 import { useState } from 'react'
+import { Picker } from '@react-native-picker/picker'
+import React from 'react'
 
 export default function FormBiscoito () {
 
     const [message, setMessage] = useState('')
     const [isSpecial, setIsSpecial] = useState(false)
+    const [brand, setBrand] = useState('')
+    const [prize, setPrize] = useState('0')
 
     return (
         <SafeAreaView style={styles.container}>
@@ -25,8 +29,27 @@ export default function FormBiscoito () {
                 value={isSpecial} 
                 onValueChange={setIsSpecial}
             />
-
         </View>
+
+        <Picker selectedValue={brand} onValueChange={(option) => {setBrand(option)}} 
+        style={{backgroundColor:'#FFF'}}
+        >
+
+            <Picker.Item value="Doritos" label='Doritos' />
+            <Picker.Item value="Trakinas" label='Trakinas' />
+            <Picker.Item value="Coca-cola" label='Coca-cola' />
+            <Picker.Item value="Nasceu" label='Nascau' />
+        </Picker>
+
+        <Text style={styles.textDesign}>Valor do Premio:</Text>
+        <TextInput 
+            value={prize}
+            onChangeText={setPrize}
+            style={globalStyles.input}
+            keyboardType='number-pad'
+        />
+
+        <Button title='Cadastrar' />
 
 
 
@@ -45,5 +68,8 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         gap: 5
+    },
+    textDesign: {
+        paddingTop: 15
     }
 })

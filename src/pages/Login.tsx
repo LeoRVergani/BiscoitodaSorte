@@ -1,5 +1,6 @@
 import { View, TextInput, TouchableOpacity, StyleSheet, Text, SafeAreaView, Alert } from 'react-native';
 import {useState} from 'react'
+import { globalStyles } from '../global/styles';
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -25,7 +26,7 @@ export default function Login() {
         <TextInput
           placeholder="Email"
           placeholderTextColor="#8b4513"
-          style={styles.input}
+          style={globalStyles.input}
           keyboardType="email-address"
           value={email}
           onChangeText={setEmail}
@@ -33,7 +34,7 @@ export default function Login() {
         <TextInput
           placeholder="Password"
           placeholderTextColor="#8b4513" 
-          style={styles.input}
+          style={globalStyles.input}
           secureTextEntry
           value={senha}
           onChangeText={setSenha}

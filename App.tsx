@@ -5,6 +5,7 @@ import Biscoito from "./src/pages/Biscoito";
 import Login from "./src/pages/Login";
 import Sobre from "./src/pages/Sobre";
 import Home from "./src/pages/Home";
+import FormBiscoito from "./src/pages/FormBiscoito";
 
 const Stack = createStackNavigator()
 
@@ -12,7 +13,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="FormBiscoito">
         
         <Stack.Screen name="Apresentacao" component={Apresentacao} 
         options={
@@ -43,6 +44,7 @@ export default function App() {
           }
         } 
         />
+      <Stack.Screen name="FormBiscoito" component={FormBiscoito} />
 
       </Stack.Navigator>
     </NavigationContainer>

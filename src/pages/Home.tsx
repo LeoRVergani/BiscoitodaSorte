@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react"
-import { Text, Alert, ScrollView, FlatList, SafeAreaView, View, TouchableOpacity, StyleSheet, Image, Platform, TextInput } from "react-native"
+import { Text, Alert, ScrollView, FlatList, SafeAreaView, View, TouchableOpacity, StyleSheet, Image, Platform, TextInput, Button } from "react-native"
 import axios from 'axios'
-import LottieView from "lottie-react-native"
+import {useFocusEffect} from '@react-navigation/native'
+import React from "react"
 
 // GET -> lista informacoes
 // POST -> cadastrar um novo informacao
@@ -24,7 +25,7 @@ type Biscoito = {
     mensagem: string
 }
 
-export default function Home() {
+export default function Home({navigation}) {
 
     const [biscoitos, setBiscoitos] = useState<Biscoito[]>([])
     const [loading, setLoading] = useState(false)
@@ -47,35 +48,42 @@ export default function Home() {
     }, []) // dispara uma única vez
     */
 
-    useEffect(() => {
+    function navigateToForm() {
+        navigation.navigate('FormBiscoito')
+    }
+
+    useFocusEffect(() => {
         setLoading(true)
 
         axios
-            .get('http://192.168.100.249:3000/biscoitos')
+            .get(process.env.EXPO_PUBLIC_API_URL + '/biscoitos')
             .then((response) => {
-                setTimeout(() => {
+            
                     setLoading(false)
                     setBiscoitos(response.data)
-                }, 5000)
+            
             })
             .catch(() => {
                 Alert.alert("Não foi possivel obter a lista de biscoitos")
             })
-    }, [])
+    })
 
 
 
     return (
-        <SafeAreaView style={{ flex: 1 }}>
+        <SafeAreaView style={styles.container}>
 
             <Text>Números de biscoitos: {biscoitos.length}</Text>
 
             <TextInput
-                style={{ borderWidth: 1, width: '90%', height: 50, margin: 10, padding: 10 }}
+                style={{ borderWidth: 1, width: '90%', height: 50, margin: 10, padding: 10, backgroundColor: '#FFF' }}
                 value={search}
                 onChangeText={setSearch}
+                placeholder="Pesquise aqui seu biscoito"
             />
 
+            <Button title="Novo biscoito" onPress={navigateToForm}/>
+ 
             <FlatList
                 ListEmptyComponent={() => (
                     <View style={{ justifyContent: 'center', alignItems: 'center' }}>
@@ -101,6 +109,7 @@ export default function Home() {
                 )}
                 data={biscoitosFiltrados} // array que deseja renderiza
                 renderItem={({ item }) => (
+                    <>
                     <TouchableOpacity style={styles.item} >
                         <Text>#{item.mensagem}</Text>
                         <Image source={{ uri: 'https://cdn-icons-png.flaticon.com/512/1450/1450139.png', width: 50, height: 50 }} />
@@ -112,6 +121,7 @@ export default function Home() {
                             }
                         </Text>
                     </TouchableOpacity>
+                    </>
                 )}
                 // keyExtractor={(item) => item.id}
                 numColumns={3}
@@ -125,7 +135,6 @@ export default function Home() {
                     gap: 10,
                 }}
                 showsVerticalScrollIndicator={false}
-                onEndReachedThreshold={1}
 
             />
 
@@ -134,6 +143,11 @@ export default function Home() {
 }
 
 const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        padding: 10,
+        backgroundColor: '#ff9933', // Fundo laranja
+    },
     item: {
         width: '30%',
         alignItems: 'center',

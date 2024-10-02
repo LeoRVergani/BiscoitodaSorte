@@ -7,45 +7,48 @@ import Sobre from "./src/pages/Sobre";
 import Home from "./src/pages/Home";
 import FormBiscoito from "./src/pages/FormBiscoito";
 
-const Stack = createStackNavigator()
+const Stack = createStackNavigator();
 
 export default function App() {
-
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="FormBiscoito">
-        
-        <Stack.Screen name="Apresentacao" component={Apresentacao} 
-        options={
-          {
-            header: () => <></>
-          }
-        }/>
-        <Stack.Screen name="Biscoito" component={Biscoito} options={
-          {
-            headerStyle: {backgroundColor: '#f7e4b3'}
-          }
-        } />
-        <Stack.Screen name="Login" component={Login} options={
-          {
-            headerStyle: {backgroundColor: '#f7e4b3'}
-          }
-        }
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen
+          name="Apresentacao"
+          component={Apresentacao}
+          options={{
+            header: () => <></>,
+          }}
         />
-        <Stack.Screen name="Sobre" component={Sobre} options={
-          {
-            headerStyle: {backgroundColor: '#f7e4b3'}
-          }
-        } 
+        <Stack.Screen
+          name="Biscoito"
+          component={Biscoito}
+          options={{
+            headerStyle: { backgroundColor: "#f7e4b3" },
+          }}
         />
-        <Stack.Screen name="Home" component={Home} options={
-          {
-            headerStyle: {backgroundColor: '#f7e4b3'}
-          }
-        } 
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{
+            headerStyle: { backgroundColor: "#f7e4b3" },
+          }}
         />
-      <Stack.Screen name="FormBiscoito" component={FormBiscoito} />
-
+        <Stack.Screen
+          name="Sobre"
+          component={Sobre}
+          options={{
+            headerStyle: { backgroundColor: "#f7e4b3" },
+          }}
+        />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+          options={{
+            headerStyle: { backgroundColor: "#f7e4b3" },
+          }}
+        />
+        <Stack.Screen name="FormBiscoito" component={FormBiscoito} />
       </Stack.Navigator>
     </NavigationContainer>
   );
